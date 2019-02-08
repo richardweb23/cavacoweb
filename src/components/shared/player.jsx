@@ -14,7 +14,8 @@ class Player extends Component {
       msisdn: "",
       userToken: "",
       isPlaying: false,
-      player: ""
+      player: "",
+      rate: 1.0
     };
 
     this.loadPlayer = this.loadPlayer.bind(this);
@@ -22,24 +23,37 @@ class Player extends Component {
   }
 
   componentDidMount(){
+    if(typeof(this.props.somUrl) !== "number"){ 
+      this.loadPlayer(this.props.somUrl, this.props.setRate, this.props.setTime);
+    }
   }
 
   componentWillReceiveProps(nextProps){
     console.log(nextProps.somUrl)
-    this.loadPlayer(nextProps.somUrl);
+    if(typeof(nextProps.somUrl) !== "number"){ 
+      this.loadPlayer(nextProps.somUrl, nextProps.setRate, nextProps.setTime);
+    }
   }
 
-  loadPlayer(somUrl){
+  loadPlayer(somUrl, setRate, setTime){
     if(this.player && this.player.play){
 
-      this.setState({ isPlaying: true });
+      this.setState({ isPlaying: true});
 
       if(somUrl !== this.player.src){
         this.player.src = somUrl;
       }
-      this.player.play();
-
-      window.addEventListener('stopOtherPlayer', this.destroyPlayer);
+      
+      //this.player.playbackRate = setRate ? setRate : 1;
+      let self = this;
+      if(self.player){
+        setTimeout(function() {
+          if(typeof(self.props.callbackPlay) == 'function'){
+            self.props.callbackPlay(somUrl);
+          }
+          self.player.play();
+        }, setTime);
+      }
     }
   }
 
@@ -53,8 +67,6 @@ class Player extends Component {
       this.player.pause();
       this.player.currentTime = 0;
     }
-
-    window.removeEventListener('stopOtherPlayer', this.destroyPlayer);
   }
 
   render() {

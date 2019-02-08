@@ -359,6 +359,9 @@ button {
   height: 10px;
   border-bottom: 5px solid #000;
 }
+.braco .casa.inicial .bullet {
+  display: none;
+}
 .braco .corda {
   display: -webkit-flex;
   display: -ms-flexbox;
