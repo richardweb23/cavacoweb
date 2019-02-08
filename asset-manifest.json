@@ -1,16 +1,16 @@
 {
   "main.css": "/cavacoweb/static/css/main.dd6e8a95.chunk.css",
-  "main.js": "/cavacoweb/static/js/main.8a52b321.chunk.js",
-  "main.js.map": "/cavacoweb/static/js/main.8a52b321.chunk.js.map",
-  "static/js/1.671a3247.chunk.js": "/cavacoweb/static/js/1.671a3247.chunk.js",
-  "static/js/1.671a3247.chunk.js.map": "/cavacoweb/static/js/1.671a3247.chunk.js.map",
+  "main.js": "/cavacoweb/static/js/main.72d283e7.chunk.js",
+  "main.js.map": "/cavacoweb/static/js/main.72d283e7.chunk.js.map",
+  "static/js/1.711e6392.chunk.js": "/cavacoweb/static/js/1.711e6392.chunk.js",
+  "static/js/1.711e6392.chunk.js.map": "/cavacoweb/static/js/1.711e6392.chunk.js.map",
   "runtime~main.js": "/cavacoweb/static/js/runtime~main.2eeda7b0.js",
   "runtime~main.js.map": "/cavacoweb/static/js/runtime~main.2eeda7b0.js.map",
   "static/media/style.css": "/cavacoweb/static/media/OpenSans-Semibold.24aab533.svg",
-  "static/media/OpenSans-Bold.woff": "/cavacoweb/static/media/OpenSans-Bold.f9fc9780.woff",
   "static/media/OpenSans-Bold.woff2": "/cavacoweb/static/media/OpenSans-Bold.7d3779b1.woff2",
+  "static/media/OpenSans-Bold.woff": "/cavacoweb/static/media/OpenSans-Bold.f9fc9780.woff",
   "static/css/main.dd6e8a95.chunk.css.map": "/cavacoweb/static/css/main.dd6e8a95.chunk.css.map",
   "index.html": "/cavacoweb/index.html",
-  "precache-manifest.523c410dd249eed5b11683ed99b9048c.js": "/cavacoweb/precache-manifest.523c410dd249eed5b11683ed99b9048c.js",
+  "precache-manifest.ba7cdbeec22cc005f509ab13e5e5b0cc.js": "/cavacoweb/precache-manifest.ba7cdbeec22cc005f509ab13e5e5b0cc.js",
   "service-worker.js": "/cavacoweb/service-worker.js"
 }
