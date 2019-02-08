@@ -1,0 +1,103 @@
+// == MAIN
+//
+
+#main {
+  //background: #fff;
+}
+
+#nota {
+  .flex-display();
+	.flex-direction(column);
+  .flex-wrap(wrap);
+  width: 200px;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px auto;
+  color: #ff6c00;
+  font-weight: bold;
+}
+
+.braco {
+  .flex-display();
+	.flex-direction(column);
+  .flex-wrap(wrap);
+  
+  width: 150px;
+  margin: 0px auto;
+  padding-top: 0px;
+  background: #e0e0e0;
+  
+  @media (min-width: @screen-md) {
+    //min-width: 800px;
+  }
+
+  .casa {
+    .flex-display();
+    .flex-direction(row);
+    .flex-wrap(wrap); 
+    .justify-content(space-between);
+    height: 30px;
+    border-top: 2px solid #000;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+
+    &:nth-child(6),
+    &:nth-child(8),
+    &:nth-child(10),
+    &:nth-child(13) {
+      &::before{
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px; 
+        border-radius: 50%;
+        background: #bdbdbd;
+        left: 69px;
+        margin-top: 10px;
+      }
+    }
+
+    &.inicial{
+      height: 10px;
+      border-bottom: 5px solid #000;
+    }
+  }
+
+  .corda {
+    .flex-display();
+    padding: 0px 10px 0px 10px;
+    cursor: pointer;
+    position: relative;
+
+    //&:hover{
+      //&::before{
+        //background: #fda667;
+      //}
+    //}
+
+    &::before{
+      content:"";
+      width: 2px;
+      height: 100%;
+      background: #bdbdbd;
+    }
+
+    &.active{
+      &::before{
+        background: #ff6c00;
+      }
+    }
+
+    .bullet {
+      .flex-display();
+      .justify-content(center);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      top: 7px;
+      left: 4px;
+      position: absolute;
+      background: #ff6c00;
+    }
+  }
+}

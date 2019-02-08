@@ -1,0 +1,51 @@
+// Scaffolding
+* {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  padding: 0px 0px 0px 0px;
+}
+
+body {
+  font-family: @font-family;
+  font-weight: 400;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+  background-color: @color-background-scaffolding;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+// Links
+
+a {
+  cursor: pointer;
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darken(@link-color, 10%);
+    text-decoration: darken(@link-color, 10%);
+  }
+}

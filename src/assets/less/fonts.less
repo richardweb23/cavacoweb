@@ -1,0 +1,23 @@
+// Fonts
+//
+
+.fontFace(@namePath, @folder, @name, @type, @weight) {
+  @font-face {
+    font-family: @name;
+    src: url('@{namePath}@{folder}@{name}-@{type}.eot');
+    src: url('@{namePath}@{folder}@{name}-@{type}.eot?#iefix') format('embedded-opentype'),
+         url('@{namePath}@{folder}@{name}-@{type}.woff2') format('woff2'),
+         url('@{namePath}@{folder}@{name}-@{type}.woff') format('font-woff'),
+         url('@{namePath}@{folder}@{name}-@{type}.ttf') format('truetype'),
+         url('@{namePath}@{folder}@{name}-@{type}.svg#@{name}-@{type}') format('svg');
+         font-weight: @weight;
+         font-style: normal;
+  }
+}
+
+// OpenSans
+.fontFace(@font-path, 'OpenSans/', 'OpenSans', 'Light', 300);
+.fontFace(@font-path, 'OpenSans/', 'OpenSans', 'Regular', 400);
+.fontFace(@font-path, 'OpenSans/', 'OpenSans', 'Semibold', 600);
+.fontFace(@font-path, 'OpenSans/', 'OpenSans', 'Bold', 700);
+.fontFace(@font-path, 'OpenSans/', 'OpenSans', 'ExtraBold', 900);

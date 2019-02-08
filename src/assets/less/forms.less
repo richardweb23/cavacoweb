@@ -1,0 +1,60 @@
+
+// == FORMS
+//
+
+form {
+  width: 100%;
+  .flex-display();
+  .align-self(center);
+  .flex-direction(column);
+
+  @media (min-width: @screen-md) {
+    width: 500px;
+  }
+}
+
+
+
+input {
+  .flex-display();
+  .align-self(center);
+  width: 90%;
+  height: 50px;
+  font-size: 20px;
+  color: @color-warmGrey;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding: 0px 10px;
+  border: 2px solid #cacaca;
+
+  &::placeholder {
+    color: #dadada;
+  }
+
+  &:-webkit-autofill {
+    border: 2px solid #cacaca;
+    .box-shadow(inset 0 0 0px 9999px white);
+  }
+  &:-webkit-autofill:focus {
+    border-color: #cacaca;
+    .box-shadow(inset 0 0 0px 9999px white);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: @screen-md) {
+    width: 300px;
+  }
+}
+button {
+  min-width: 150px;
+  .align-self(center);
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
