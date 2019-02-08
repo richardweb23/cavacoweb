@@ -61,7 +61,7 @@ class BracoCavaco extends Component {
   }
 
   printBullet(numberCorda){
-    let acorde = this.state.notasAcorde;//[44,32,23,14]; //[42, 21, 12];
+    let acorde = this.state.notasAcorde ? this.state.notasAcorde : [];//[44,32,23,14]; //[42, 21, 12];
 
     let corda = parseInt(numberCorda);
     let bullet = false;
@@ -105,9 +105,11 @@ class BracoCavaco extends Component {
     
     if(this.state.notas.length && !this.state.mute){
       renderPlayer = this.state.notas.map((item, index)=>{
+        let i = '0.'+index;
+        i = parseFloat(i)
         return (
           <React.Fragment>
-            <Player somUrl={item} setTime={(index*500)} setRate={index} key={index} callbackPlay={this.callbackPlay}/>
+            <Player somUrl={item} setTime={(i*5000)} setRate={index} key={index} callbackPlay={this.callbackPlay}/>
           </React.Fragment>
         )
       });
