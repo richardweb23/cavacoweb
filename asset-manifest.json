@@ -1,7 +1,7 @@
 {
   "main.css": "/cavacoweb/static/css/main.dd6e8a95.chunk.css",
-  "main.js": "/cavacoweb/static/js/main.d8a19e65.chunk.js",
-  "main.js.map": "/cavacoweb/static/js/main.d8a19e65.chunk.js.map",
+  "main.js": "/cavacoweb/static/js/main.9e383c2d.chunk.js",
+  "main.js.map": "/cavacoweb/static/js/main.9e383c2d.chunk.js.map",
   "static/js/1.671a3247.chunk.js": "/cavacoweb/static/js/1.671a3247.chunk.js",
   "static/js/1.671a3247.chunk.js.map": "/cavacoweb/static/js/1.671a3247.chunk.js.map",
   "runtime~main.js": "/cavacoweb/static/js/runtime~main.2eeda7b0.js",
@@ -11,6 +11,6 @@
   "static/media/OpenSans-Bold.woff": "/cavacoweb/static/media/OpenSans-Bold.f9fc9780.woff",
   "static/css/main.dd6e8a95.chunk.css.map": "/cavacoweb/static/css/main.dd6e8a95.chunk.css.map",
   "index.html": "/cavacoweb/index.html",
-  "precache-manifest.72717a725b0fee7c41e0298ccd00e4f8.js": "/cavacoweb/precache-manifest.72717a725b0fee7c41e0298ccd00e4f8.js",
+  "precache-manifest.5151f3d8f49190090f11e2fa461fbfdb.js": "/cavacoweb/precache-manifest.5151f3d8f49190090f11e2fa461fbfdb.js",
   "service-worker.js": "/cavacoweb/service-worker.js"
 }
